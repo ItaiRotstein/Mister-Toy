@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9110bcf.css",
+    "main.js": "/static/js/main.7c7ad2af.js",
+    "static/media/header-img.jpg": "/static/media/header-img.d7fad2a008915b0fd003.jpg",
+    "static/media/Quicksand-Regular.ttf": "/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
+    "static/media/toy.png": "/static/media/toy.8c5877866813e0646c63.png",
+    "index.html": "/index.html",
+    "main.d9110bcf.css.map": "/static/css/main.d9110bcf.css.map",
+    "main.7c7ad2af.js.map": "/static/js/main.7c7ad2af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9110bcf.css",
+    "static/js/main.7c7ad2af.js"
+  ]
+}
