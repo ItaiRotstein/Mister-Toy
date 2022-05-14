@@ -12,8 +12,6 @@ class _AppHeader extends Component {
         let { filterBy } = this.props
         filterBy = { ...filterBy, [key]: value }
         this.props.filterToy(filterBy)
-        console.log('filterBy', filterBy)
-
     }
 
     render() {
@@ -28,6 +26,7 @@ class _AppHeader extends Component {
                         <Link to='/'>Home</Link>
                         <Link to='/about'>About</Link>
                         <Link to='/toy'>Our Toys</Link>
+                        <Link to='/toy/edit'>Add Toy</Link>
                     </nav>
                 </div>
             </header>

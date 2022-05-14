@@ -17,7 +17,7 @@ class _ToyDetails extends Component {
         toyService.getById(toyId)
             .then(toy => {
                 if (!toy) this.onGoBack()
-                this.setState({ toy }, () => console.log(toy))
+                this.setState({ toy })
             })
     }
 

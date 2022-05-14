@@ -26,4 +26,10 @@
     .actions *{
         font-size: em(12px);
     }
+
+    .preview-createdAt{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

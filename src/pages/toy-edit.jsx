@@ -25,8 +25,14 @@ class _ToyEdit extends React.Component {
             })
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.match.params.toyId !== this.props.match.params.toyId) {
+            this.setState({ toy: toyService.getEmptyToy() })
+        }
+    }
+
     onGoBack = () => {
-        this.props.history.goBack();
+        this.props.history.push('/toy');
     }
 
     onHandleChange = ({ target }) => {
@@ -71,6 +77,7 @@ class _ToyEdit extends React.Component {
             <section className="toy-edit flex justify-center">
                 <form onSubmit={this.onSaveToy}>
                     <ul className="toy-edit-list clean-list flex column">
+                        {!toy._id && <h2>New Toy</h2>}
                         <li className="toy-edit-item">
                             <label htmlFor="toy-title"><h3>Name</h3></label>
                             <input type="text" name="name" value={toy.name} id="toy-title" onChange={this.onHandleChange} required />

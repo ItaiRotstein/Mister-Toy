@@ -10,7 +10,7 @@ export function ToyPreview({ toy, onRemoveToy, onGoToDetails }) {
             <div className="details">
                 <h4>{toy.name}</h4>
                 <p className="price">Price: <span>{toy.price}</span></p>
-                <p>Created: <span>{moment(toy.createdAt).fromNow()}</span></p>
+                <p className="preview-createdAt">Created: <span>{moment(toy.createdAt).fromNow()}</span></p>
                 <div className="actions flex space-between">
                     <button className="btn-warning" onClick={(ev) => onRemoveToy(ev, toy._id)}>x</button>
                     <Link onClick={(ev) => ev.stopPropagation()} className="btn" to={`/toy/edit/${toy._id}`}>Edit</Link>

@@ -50,7 +50,7 @@ a {
     @include btn;
 
     &-small {
-        @include btn($padding: em(5px) em(30px));    
+        @include btn($padding: em(5px) em(20px));    
     }
     &-warning {
         @include btn($type: warning);

@@ -57,7 +57,6 @@ class _ToyApp extends Component {
             <main className="toy-app main-layout">
                 <div className="app-controls flex space-between align-center">
                     <ToyLables filterBy={filterBy} onLabels={this.onLabels} />
-                    <Link className="btn" to="/toy/edit">Add Toy ➕</Link>
                     <ToySort onSort={this.onSort} />
                 </div>
                 <ToyList toys={toys} onRemoveToy={this.onRemoveToy} onGoToDetails={this.onGoToDetails}/>
