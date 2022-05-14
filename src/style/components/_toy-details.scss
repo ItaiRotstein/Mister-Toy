@@ -35,6 +35,11 @@
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) minmax(auto, 480px) minmax(2rem, 1fr);
     gap: 2em;
+
+    &:last-child{
+        padding-bottom: 30px;  
+    }
+
     li {
         grid-column: 2;
         display: grid;

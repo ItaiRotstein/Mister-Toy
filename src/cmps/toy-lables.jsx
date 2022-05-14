@@ -13,7 +13,7 @@ export function ToyLables({ onLabels, filterBy }) {
     })
 
     return (
-        <div className='toy-sort' style={{ width: '200px' }}>
+        <div className='toy-sort' style={{ width: '150px' }}>
             <Select
                 options={options}
                 value={filterBy.lables}

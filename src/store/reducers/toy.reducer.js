@@ -3,11 +3,10 @@ const initialState = {
     toys: [],
     filterBy: {
         txt: '',
-        inStock: true,
+        inStock: 'all',
         labels: [],
         sort: 'name'
     },
-    msg: null
 }
 
 export function toyReducer(state = initialState, action) {
@@ -29,8 +28,6 @@ export function toyReducer(state = initialState, action) {
             return { ...state, toys }
         case 'SET_FILTERBY':
             return { ...state, filterBy: action.filterBy }
-        case 'SET_MSG':
-            return { ...state, msg: action.msg }
         default:
             return state
     }

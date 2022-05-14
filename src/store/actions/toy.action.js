@@ -60,11 +60,10 @@ export function filterToy(filterBy) {
     }
 }
 
-export function setUserMsg(msg) {
-    return (dispatch) => {
-        dispatch({
-            type: 'SET_MSG',
-            msg
-        })
+export function setRating(value) {
+    return dispatch => {
+        return Promise.resolve(
+            dispatch({ type: 'SET_RATING', value })    
+        )
     }
 }

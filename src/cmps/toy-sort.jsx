@@ -9,7 +9,7 @@ export function ToySort({ onSort }) {
     ]
 
     return (
-        <div className='toy-sort' style={{ width: '200px' }}>
+        <div className='toy-sort' style={{ width: '150px' }}>
             <Select options={options} onChange={onSort} placeholder="Sort By" />
         </div>
     )

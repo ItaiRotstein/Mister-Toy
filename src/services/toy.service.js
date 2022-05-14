@@ -55,8 +55,9 @@ function query(filterBy = { txt: '' }) {
             }
 
             if (filterBy.labels.length > 0) {
-                // console.log('filterBy.labels', filterBy)
-                toys = toys.filter(toy => toy.labels.some(label => filterBy.labels.includes(label.toLowerCase())))
+                toys = toys.filter(toy =>
+                    toy.labels.some(label =>
+                        filterBy.labels.includes(label.toLowerCase())))
             }
 
             switch (filterBy.sort) {
@@ -69,6 +70,10 @@ function query(filterBy = { txt: '' }) {
                 case 'createdAt':
                     toys.sort((a, b) => a.createdAt - b.createdAt)
                     break
+            }
+            
+            if (filterBy.inStock !== 'all') {
+                toys = toys.filter(toy=> toy.inStock === filterBy.inStock)
             }
 
             // const startIdx = filterBy.pageIdx * PAGE_SIZE;
@@ -104,7 +109,8 @@ function getEmptyToy() {
         labels: [],
         createdAt: Date.now(),
         inStock: true,
-        imgUrl: require('../assets/img/toy.png')
+        imgUrl: require('../assets/img/toy.png'),
+        rating: 5
     }
 }
 

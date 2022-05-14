@@ -104,7 +104,7 @@ class _ToyEdit extends React.Component {
                             </ul>
                         </li>
                         <li>
-                            <div className="flex space-between">
+                            <div className="btns flex space-between">
                                 <button className="btn-small">Save</button>
                                 <button className="btn-small" onClick={this.onGoBack}>←</button>
                             </div>

@@ -7,11 +7,15 @@
     border-radius: .7em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: em(250px);
-    cursor: pointer;
 
     img {
         aspect-ratio: 1 / 1;
         border-radius: 0.7em;
+        cursor: pointer;
+    }
+
+    h4 {
+        cursor: pointer;
     }
 
     .details{

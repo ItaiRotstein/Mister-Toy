@@ -1,10 +1,11 @@
-import {Component} from "react";
+import { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom"
 import moment from 'moment';
+import Rating from '@mui/material/Rating';
 
 import { toyService } from "../services/toy.service"
-import { removeToy } from '../store/actions/toy.action'
+import { removeToy, saveToy } from '../store/actions/toy.action'
 
 class _ToyDetails extends Component {
 
@@ -33,6 +34,11 @@ class _ToyDetails extends Component {
         this.props.history.push('/toy')
     }
 
+    onSetRating = (value) => {
+        this.setState({ toy: { ...this.state.toy, rating: value } }, () =>
+            this.props.saveToy(this.state.toy))
+    }
+
     render() {
         const { toy } = this.state
         if (!toy) return <div>Loading toy...</div>
@@ -47,10 +53,17 @@ class _ToyDetails extends Component {
                         <h4>Labels: <span className="regular">{toy.labels}</span></h4>
                         <h4>In-Stock: <span className={inStockClass}></span></h4>
                         <h4>Created at: <span className="regular">{moment(toy.createdAt).format("MMM Do YY")}</span></h4>
+                        <Rating
+                            name="simple-controlled"
+                            value={toy.rating}
+                            onChange={(ev, newValue) => {
+                                this.onSetRating(newValue);
+                            }}
+                        />
                         <div className="flex space-between">
-                            <Link className="btn-warning-small" onClick={() => this.onRemoveToy(toy._id)}>x</Link>
+                            <button className="btn-warning-small" onClick={() => this.onRemoveToy(toy._id)}>x</button>
                             <Link className="btn-small" to={`/toy/edit/${toy._id}`}>Edit</Link>
-                            <Link className="btn-small" onClick={this.onGoBack}>←</Link>
+                            <button className="btn-small" onClick={this.onGoBack}>←</button>
                         </div>
                     </div>
                 </section>
@@ -64,7 +77,7 @@ class _ToyDetails extends Component {
                             </li>
                         )
                     })}
-                </ul> 
+                </ul>
             </section>
         )
     }
@@ -77,6 +90,7 @@ const mapStateToProps = (storeState) => {
 
 const mapDispatchToProps = {
     removeToy,
+    saveToy
 }
 
 export const ToyDetails = connect(
