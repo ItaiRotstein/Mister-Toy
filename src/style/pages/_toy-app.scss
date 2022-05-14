@@ -1,0 +1,10 @@
+.toy-app{
+    margin-top: 30px;
+    grid-template-rows: 10% 90%;
+    gap: 2em;
+}
+
+.app-controls{
+    grid-row: 1;
+    grid-column: 2;
+}

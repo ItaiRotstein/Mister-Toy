@@ -1,0 +1,27 @@
+.toy-details {
+    background-color: $clr3;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(auto, 480px) minmax(auto, 480px) minmax(2rem, 1fr);
+
+    img {
+        grid-column: 2;
+        max-width: 300px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .details-container{
+        align-self: center;
+        justify-self: center;
+        background-color: $clr3;
+        padding: 10px;
+
+        .in::after{
+            content: '✅';
+        }
+        
+        .out::after{
+            content: '❌';
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+@mixin btn($type: regular, $padding: em(10px) em(30px)) {
+
+
+  background-color: $clr6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: $padding;
+  font-size: 16px;
+  cursor: pointer;
+
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  @if $type == regular {
+    background-color: $clr4;
+    &:hover {
+      background-color: darken($clr4, 8%);
+    }
+  } @else if $type == warning {
+    background-color: $clr1;
+    &:hover {
+      background-color: darken($clr1, 8%);
+    }
+  } @else if $type == warning-small {
+    background-color: $clr1;
+    &:hover {
+      background-color: darken($clr1, 8%);
+    }
+    padding: em(5px) em(30px);
+  }
+
+} 

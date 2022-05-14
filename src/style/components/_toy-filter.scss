@@ -1,0 +1,14 @@
+.toy-filter {
+
+    .inputs >*{
+        margin: 10px;
+    }
+
+    input {
+        border: none;
+        background-color: $clr3;
+        padding: 10px;
+        border-radius: 30px;
+        width: 100%;
+    }
+}

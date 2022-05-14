@@ -1,0 +1,55 @@
+::selection {
+    background-color: $clr4;
+    color: $clr3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html { 
+   font-family: Quicksand, sans-serif; 
+   color: $clr5;
+
+}
+
+body {
+    margin: 0;
+    background-color: $clr2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+    object-fit: contain
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    @include btn;
+
+    &-small {
+        @include btn($padding: em(5px) em(30px));    
+    }
+    &-warning {
+        @include btn($type: warning);
+    }
+
+    &-warning-small {
+        @include btn($type: warning-small)
+    }
+
+}
+
