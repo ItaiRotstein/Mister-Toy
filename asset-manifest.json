@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Mister-Toy/static/css/main.5b136707.css",
-    "main.js": "/Mister-Toy/static/js/main.88cc299b.js",
+    "main.css": "/Mister-Toy/static/css/main.1c5a684e.css",
+    "main.js": "/Mister-Toy/static/js/main.43194020.js",
     "static/media/header-img.jpg": "/Mister-Toy/static/media/header-img.d7fad2a008915b0fd003.jpg",
     "static/media/Quicksand-Regular.ttf": "/Mister-Toy/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
     "static/media/toy.png": "/Mister-Toy/static/media/toy.8c5877866813e0646c63.png",
     "index.html": "/Mister-Toy/index.html",
-    "main.5b136707.css.map": "/Mister-Toy/static/css/main.5b136707.css.map",
-    "main.88cc299b.js.map": "/Mister-Toy/static/js/main.88cc299b.js.map"
+    "main.1c5a684e.css.map": "/Mister-Toy/static/css/main.1c5a684e.css.map",
+    "main.43194020.js.map": "/Mister-Toy/static/js/main.43194020.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b136707.css",
-    "static/js/main.88cc299b.js"
+    "static/css/main.1c5a684e.css",
+    "static/js/main.43194020.js"
   ]
 }
