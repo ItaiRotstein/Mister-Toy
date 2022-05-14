@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.38378f14.css",
-    "main.js": "/static/js/main.badaa7ad.js",
-    "static/media/header-img.jpg": "/static/media/header-img.d7fad2a008915b0fd003.jpg",
-    "static/media/Quicksand-Regular.ttf": "/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
-    "static/media/toy.png": "/static/media/toy.8c5877866813e0646c63.png",
-    "index.html": "/index.html",
-    "main.38378f14.css.map": "/static/css/main.38378f14.css.map",
-    "main.badaa7ad.js.map": "/static/js/main.badaa7ad.js.map"
+    "main.css": "/Mister-Toy/static/css/main.5b136707.css",
+    "main.js": "/Mister-Toy/static/js/main.88cc299b.js",
+    "static/media/header-img.jpg": "/Mister-Toy/static/media/header-img.d7fad2a008915b0fd003.jpg",
+    "static/media/Quicksand-Regular.ttf": "/Mister-Toy/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
+    "static/media/toy.png": "/Mister-Toy/static/media/toy.8c5877866813e0646c63.png",
+    "index.html": "/Mister-Toy/index.html",
+    "main.5b136707.css.map": "/Mister-Toy/static/css/main.5b136707.css.map",
+    "main.88cc299b.js.map": "/Mister-Toy/static/js/main.88cc299b.js.map"
   },
   "entrypoints": [
-    "static/css/main.38378f14.css",
-    "static/js/main.badaa7ad.js"
+    "static/css/main.5b136707.css",
+    "static/js/main.88cc299b.js"
   ]
 }
