@@ -7,9 +7,9 @@ export function ToyPreview({ toy, onRemoveToy, onGoToDetails }) {
             <div className="img-container">
                 <img src={toy.imgUrl} />
             </div>
-            <div className="details">
+            <div className="details flex column">
                 <h4>{toy.name}</h4>
-                <p className="price">Price: <span>{toy.price}</span></p>
+                <p className="preview-price">Price: <span>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(toy.price)}</span></p>
                 <p className="preview-createdAt">Created: <span>{moment(toy.createdAt).fromNow()}</span></p>
                 <div className="actions flex space-between">
                     <button className="btn-warning" onClick={(ev) => onRemoveToy(ev, toy._id)}>x</button>

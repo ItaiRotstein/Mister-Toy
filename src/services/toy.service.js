@@ -100,7 +100,7 @@ function remove(toyId) {
 function getEmptyToy() {
     return {
         name: '',
-        price: 0,
+        price: '',
         labels: [],
         createdAt: Date.now(),
         inStock: true,

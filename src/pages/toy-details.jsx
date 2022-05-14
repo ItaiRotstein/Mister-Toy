@@ -38,8 +38,8 @@ class _ToyDetails extends Component {
         if (!toy) return <div>Loading toy...</div>
         const inStockClass = (toy.inStock) ? 'in' : 'out'
         return (
-            <section>
-                <section className="toy-details">
+            <section className="toy-details">
+                <section className="toy-details-main-container">
                     <img src={toy.imgUrl} />
                     <div className="details-container">
                         <h3>{toy.name}</h3>

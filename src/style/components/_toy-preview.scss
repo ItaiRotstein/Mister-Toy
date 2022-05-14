@@ -9,18 +9,15 @@
     max-width: em(250px);
     cursor: pointer;
 
-    span {
-        color: $clr1;
-    }
-
     img {
         aspect-ratio: 1 / 1;
         border-radius: 0.7em;
     }
 
     .details{
-        margin:30px;
+        margin-bottom:1em;
         max-width: 150px;
+        gap: 1em;
     }
 
     .actions *{
@@ -31,5 +28,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+    }
+
+    .preview-price span {
+        color: $clr1
     }
 }
