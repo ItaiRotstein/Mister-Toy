@@ -43,10 +43,10 @@ class _ToyDetails extends Component {
                     <img src={toy.imgUrl} />
                     <div className="details-container">
                         <h3>{toy.name}</h3>
-                        <p>Price: <span>{toy.price}</span></p>
-                        <p>Labels: <span>{toy.labels}</span></p>
-                        <p>In-Stock: <span className={inStockClass}></span></p>
-                        <p>Created at: {moment(toy.createdAt).format("MMM Do YY")}</p>
+                        <h4>Price: <span className="regular">{toy.price}</span></h4>
+                        <h4>Labels: <span className="regular">{toy.labels}</span></h4>
+                        <h4>In-Stock: <span className={inStockClass}></span></h4>
+                        <h4>Created at: <span className="regular">{moment(toy.createdAt).format("MMM Do YY")}</span></h4>
                         <div className="flex space-between">
                             <Link className="btn-warning-small" onClick={() => this.onRemoveToy(toy._id)}>x</Link>
                             <Link className="btn-small" to={`/toy/edit/${toy._id}`}>Edit</Link>

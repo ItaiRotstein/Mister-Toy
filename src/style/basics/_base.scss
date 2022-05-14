@@ -38,6 +38,14 @@ a {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: bold
+}
+
+.regular {
+    font-weight: normal
+}
+
 .btn {
     @include btn;
 

@@ -7,16 +7,20 @@
         grid-column: 2;
         max-width: 300px;
         align-self: flex-start;
-        justify-self: center;
+        justify-self: flex-end;
     }
 
     .details-container{
         font-size: 1.3em;
         align-self: center;
-        justify-self: center;
+        justify-self: flex-start;
         background-color: $clr3;
-        padding: 10px;
-
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        &>*{
+            // margin-bottom: 10px;
+        }
         .in::after{
             content: '✅';
         }
