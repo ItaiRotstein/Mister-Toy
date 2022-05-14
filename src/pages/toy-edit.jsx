@@ -26,7 +26,7 @@ class _ToyEdit extends React.Component {
     }
 
     onGoBack = () => {
-        this.props.history.push('/toy')
+        this.props.history.goBack();
     }
 
     onHandleChange = ({ target }) => {

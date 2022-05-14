@@ -5,7 +5,7 @@ import { toyService } from '../services/toy.service'
 
 export function ToyLables({ onLabels, filterBy }) {
 
-    const options = toyService.getLabels().map(label=> {
+    const options = toyService.getLabels().map(label => {
         return {
             value: label.toLowerCase(),
             label: label
@@ -14,7 +14,12 @@ export function ToyLables({ onLabels, filterBy }) {
 
     return (
         <div className='toy-sort' style={{ width: '200px' }}>
-            <Select options={options} value={filterBy.lables} onChange={onLabels} placeholder="Labels" isMulti={true} />
+            <Select
+                options={options}
+                value={filterBy.lables}
+                onChange={onLabels}
+                placeholder="Labels" isMulti={true}
+            />
         </div>
     )
 }

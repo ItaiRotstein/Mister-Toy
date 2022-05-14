@@ -6,11 +6,12 @@
     img {
         grid-column: 2;
         max-width: 300px;
-        align-self: center;
+        align-self: flex-start;
         justify-self: center;
     }
 
     .details-container{
+        font-size: 1.3em;
         align-self: center;
         justify-self: center;
         background-color: $clr3;
@@ -24,4 +25,26 @@
             content: '❌';
         }
     }
+}
+
+.toy-reviews {
+    background-color: $clr3;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(auto, 480px) minmax(2rem, 1fr);
+    gap: 2em;
+    li {
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: 10 10% 1fr;
+        gap: 1em;
+        background-color: $clr2;
+        padding: 1em;
+
+        h4{
+            background-color: darken($clr2, 8%);
+            font-size: 1.5em;
+            padding: 5px;
+        }
+    }
+    
 }
