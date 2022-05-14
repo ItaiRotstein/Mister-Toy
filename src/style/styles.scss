@@ -13,6 +13,7 @@
 
 //COMPONENTS
 @import 'components/app-header';
+@import 'components/app-footer';
 @import 'components/toy-preview';
 @import 'components/toy-list';
 @import 'components/toy-filter';
@@ -21,3 +22,5 @@
 
 //PAGES
 @import 'pages/toy-app';
+@import 'pages/home-page';
+@import 'pages/about';

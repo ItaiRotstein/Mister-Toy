@@ -1,0 +1,10 @@
+.about {
+    margin: 1em;
+    text-align: center;
+    font-size: 1.3em;
+    &>* {
+        grid-column: 2;
+        justify-self: center;
+        margin: 10px 0;
+    }
+}

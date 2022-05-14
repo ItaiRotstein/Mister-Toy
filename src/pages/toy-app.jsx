@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from 'react-router-dom';
 
 import { loadToys, removeToy, filterToy, setUserMsg } from '../store/actions/toy.action'
 import { ToyList } from '../cmps/toy-list'
