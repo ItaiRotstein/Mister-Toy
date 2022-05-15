@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Mister-Toy/static/css/main.bd31a551.css",
-    "main.js": "/Mister-Toy/static/js/main.3460b0c1.js",
+    "main.css": "/Mister-Toy/static/css/main.05cc7fe4.css",
+    "main.js": "/Mister-Toy/static/js/main.fdc3d6bd.js",
     "static/media/header-img.jpg": "/Mister-Toy/static/media/header-img.d7fad2a008915b0fd003.jpg",
+    "static/media/Mali-Regular.ttf": "/Mister-Toy/static/media/Mali-Regular.e27c9a1ab13e4c733517.ttf",
     "static/media/Quicksand-Regular.ttf": "/Mister-Toy/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
     "static/media/toy.png": "/Mister-Toy/static/media/toy.8c5877866813e0646c63.png",
     "index.html": "/Mister-Toy/index.html",
-    "main.bd31a551.css.map": "/Mister-Toy/static/css/main.bd31a551.css.map",
-    "main.3460b0c1.js.map": "/Mister-Toy/static/js/main.3460b0c1.js.map"
+    "main.05cc7fe4.css.map": "/Mister-Toy/static/css/main.05cc7fe4.css.map",
+    "main.fdc3d6bd.js.map": "/Mister-Toy/static/js/main.fdc3d6bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd31a551.css",
-    "static/js/main.3460b0c1.js"
+    "static/css/main.05cc7fe4.css",
+    "static/js/main.fdc3d6bd.js"
   ]
 }
