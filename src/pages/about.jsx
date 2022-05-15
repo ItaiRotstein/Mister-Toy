@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 
 export function About() {
+
     return (
         <main className="about main-layout">
             <h2>Who are we?</h2>
@@ -12,8 +12,11 @@ export function About() {
             </p>
 
             <p>
-            Follow us on <a target="_blank" href="http://www.facebook.com">Facebook</a>,<a target="_blank" href="http://www.twitter.com">Twitter</a>,  <a target="_blank" href="http://www.instegram.com">Instegram</a>,  <a target="_blank" href="http://www.Youtube.com">Youtube</a> and  <a target="_blank" href="http://www.pinterest.com">Pinterest</a> for play updates, the latest reviews and exciting news about our immersive in-store experiences! We've got a new way to play, and we can't wait to share it with you!
+                Follow us on <a target="_blank" href="http://www.facebook.com">Facebook</a>,<a target="_blank" href="http://www.twitter.com">Twitter</a>,  <a target="_blank" href="http://www.instegram.com">Instegram</a>,  <a target="_blank" href="http://www.Youtube.com">Youtube</a> and  <a target="_blank" href="http://www.pinterest.com">Pinterest</a> for play updates, the latest reviews and exciting news about our immersive in-store experiences! We've got a new way to play, and we can't wait to share it with you!
             </p>
         </main>
-    );
+    )
 }
+
+
+

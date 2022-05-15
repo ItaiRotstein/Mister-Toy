@@ -1,4 +1,3 @@
-import { Switch, Route, Link, } from "react-router-dom";
 
 export function HomePage() {
     return (
