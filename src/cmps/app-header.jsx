@@ -28,6 +28,7 @@ class _AppHeader extends Component {
                         <Link to='/toy'>Our Toys</Link>
                         <Link to='/toy/edit'>Add Toy</Link>
                     </nav>
+                    <h1>Mister Toy</h1>
                 </div>
             </header>
         )
